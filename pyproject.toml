@@ -3,7 +3,7 @@ name = "csc3105-group14"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.13,<3.14"
 dependencies = [
     "jupyter>=1.1.1",
     "matplotlib>=3.10.8",
@@ -12,5 +12,6 @@ dependencies = [
     "scikit-learn>=1.8.0",
     "scipy>=1.17.1",
     "seaborn>=0.13.2",
+    "tensorflow>=2.21.0",
     "xgboost>=3.2.0",
 ]
