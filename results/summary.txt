@@ -19,4 +19,4 @@ FILES SAVED:
   - 1 models
   - 2 CSV files
 
-Location: C:\Users\angcl\OneDrive - Singapore Institute Of Technology\Y2\Tri2\Data Analytics\Project\results
+Location: C:\Users\angcl\Documents\School\Uni\CSC3105_Group14\results
