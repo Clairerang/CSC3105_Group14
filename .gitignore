@@ -218,4 +218,5 @@ __marimo__/
 # Custom
 Dataset/ 
 *.pkl 
-uwb"data/uwb_preprocessed_for_ml.csv" 
+uwb
+data/
