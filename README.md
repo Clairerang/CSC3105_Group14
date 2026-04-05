@@ -10,7 +10,7 @@ The repository includes the full notebook workflow, processed data, trained-mode
 
 ## Demo
 
-YouTube demo link: [https://youtu.be/a1iQ6uTfpCA?si=ou_JR9OnATRMqqKe](https://youtu.be/a1iQ6uTfpCA?si=ou_JR9OnATRMqqKe)
+YouTube demo link: [Group14 Demo Video](https://youtu.be/a1iQ6uTfpCA?si=ou_JR9OnATRMqqKe)
 
 ## Team Members
 
