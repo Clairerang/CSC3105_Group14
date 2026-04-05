@@ -217,7 +217,5 @@ __marimo__/
 .streamlit/secrets.toml
 
 # Custom
-Dataset/ 
 *.pkl 
 uwb
-data/
