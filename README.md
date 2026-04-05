@@ -63,20 +63,20 @@ The project is organized as a notebook-based pipeline:
 
 ## Results
 
-The generated summary in `results/summary.txt` reports the following headline results.
+The results below are aligned with the final summary sections in `01_Classification.ipynb` and `02_Regression.ipynb`.
 
 ### Classification
 
-Best classification model: `XGBoost`
+Top classification models: `MLP` and `XGBoost`
 
 | Model | Accuracy | Precision | Recall | F1-score | ROC-AUC |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| XGBoost | 0.9250 | 0.9384 | 0.9098 | 0.9238 | 0.9798 |
-| MLP | 0.9236 | 0.9256 | 0.9212 | 0.9234 | 0.9779 |
-| Random Forest | 0.9233 | 0.9330 | 0.9121 | 0.9225 | 0.9764 |
-| Logistic Regression | 0.8613 | 0.8898 | 0.8248 | 0.8560 | 0.9257 |
-| Linear SVM | 0.8601 | 0.8928 | 0.8186 | 0.8541 | 0.9254 |
-| 1D CNN | 0.8557 | 0.9281 | 0.7712 | 0.8424 | 0.9223 |
+| MLP | 0.9217 | 0.9397 | 0.9012 | 0.9200 | 0.9780 |
+| XGBoost | 0.9225 | 0.9383 | 0.9045 | 0.9211 | 0.9771 |
+| Random Forest | 0.9155 | 0.9258 | 0.9033 | 0.9144 | 0.9739 |
+| Logistic Regression | 0.8589 | 0.8835 | 0.8269 | 0.8543 | 0.9238 |
+| Linear SVM | 0.8589 | 0.8880 | 0.8214 | 0.8534 | 0.9234 |
+| 1D CNN | 0.8500 | 0.8820 | 0.8081 | 0.8434 | 0.9204 |
 
 ### Regression
 
@@ -84,23 +84,24 @@ Task 2 best model: `MLP`
 
 | Model | RMSE | MAE | R^2 |
 | --- | ---: | ---: | ---: |
-| MLP | 1.3017 | 0.9933 | 0.6943 |
-| Random Forest | 1.3343 | 1.0051 | 0.6788 |
-| XGBoost | 1.3478 | 1.0206 | 0.6723 |
+| MLP | 1.3036 | 0.9809 | 0.6931 |
+| Random Forest | 1.3419 | 1.0132 | 0.6748 |
+| XGBoost | 1.3604 | 1.0332 | 0.6657 |
 
 Task 2b best model: `MLP`
 
 | Model | RMSE | MAE | R^2 |
 | --- | ---: | ---: | ---: |
-| MLP | 1.2987 | 0.9870 | 0.8319 |
-| XGBoost | 1.3628 | 1.0084 | 0.8149 |
-| Random Forest | 1.4051 | 1.0163 | 0.8032 |
+| MLP | 1.2973 | 0.9753 | 0.8274 |
+| XGBoost | 1.3589 | 1.0081 | 0.8106 |
+| Random Forest | 1.3839 | 1.0138 | 0.8035 |
 
 ### Key Takeaways
 
-- `XGBoost` achieved the strongest LOS/NLOS classification performance, reaching `92.50%` accuracy and `0.9798` ROC-AUC.
+- `XGBoost` achieved the strongest overall LOS/NLOS classification result in the final notebook, with `92.25%` accuracy and `0.9211` F1-score.
+- `MLP` recorded the highest reported `ROC-AUC` at `0.9780`, showing similarly strong classification performance.
 - `MLP` delivered the best regression results for both Task 2 and Task 2b.
-- The regression setup for Task 2b produced a higher `R^2` than Task 2, suggesting stronger predictive performance for that formulation.
+- Task 2b produced a higher `R^2` than Task 2, although the notebook notes this should be interpreted carefully because the target distributions differ across the two tasks.
 
 ### Output Artifacts
 
@@ -111,7 +112,6 @@ Generated outputs are stored in `results/`, including:
 - `results/figures/eda/` for exploratory data analysis figures
 - `results/model_comparison.csv` for classifier metrics
 - `results/feature_importance.csv` for feature-importance rankings
-- `results/summary.txt` for the consolidated experiment summary
 
 ## Repository Structure
 
@@ -131,7 +131,6 @@ CSC3105_Group14/
 |   |-- figures/eda/                   # EDA figures
 |   |-- feature_importance.csv         # feature ranking summary
 |   |-- model_comparison.csv           # model performance summary
-|   `-- summary.txt                    # consolidated experiment results
 |-- CSC3105_Mini_Project_2026.pdf      # project brief
 |-- pyproject.toml                     # dependency and tool configuration
 `-- uv.lock                            # locked dependency versions
@@ -187,5 +186,5 @@ For completeness, the dataset package also credits funding from the European Hor
 ## Notes
 
 - The repository already contains both raw and processed data.
-- Results reported here are taken from the generated project outputs in `results/summary.txt` and related CSV files.
+- Results reported here are taken from the final summary tables in `01_Classification.ipynb` and `02_Regression.ipynb`.
 - If the environment uses Python newer than `3.13`, dependency resolution may fail because `pyproject.toml` requires `>=3.13,<3.14`.
