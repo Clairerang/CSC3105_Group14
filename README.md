@@ -67,7 +67,7 @@ The results below are aligned with the final summary sections in `01_Classificat
 
 ### Classification
 
-Top classification models: `MLP` and `XGBoost`
+Top classification model: `MLP`
 
 | Model | Accuracy | Precision | Recall | F1-score | ROC-AUC |
 | --- | ---: | ---: | ---: | ---: | ---: |
