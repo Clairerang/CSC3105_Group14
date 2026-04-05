@@ -115,17 +115,27 @@ Generated outputs are stored in `results/`, including:
 
 ## Repository Structure
 
-- `Exploratory_Data_Analysis.ipynb` - exploratory analysis and visualization
-- `00_Data_Prep.ipynb` - preprocessing and feature engineering
-- `01_Classification.ipynb` - classification experiments
-- `02_Regression.ipynb` - regression experiments
-- `Dataset/` - original bundled dataset package
-- `data/` - processed dataset used by the project
-- `results/` - generated figures, summaries, and saved outputs
-- `CSC3105_Mini_Project_2026.pdf` - project brief
-- `presentation_chat_export.md` - presentation support material
-- `pyproject.toml` - dependency and tool configuration
-- `uv.lock` - locked dependency versions
+```text
+CSC3105_Group14/
+|-- Exploratory_Data_Analysis.ipynb    # exploratory analysis and visualization
+|-- 00_Data_Prep.ipynb                 # preprocessing and feature engineering
+|-- 01_Classification.ipynb            # LOS/NLOS classification experiments
+|-- 02_Regression.ipynb                # range prediction experiments
+|-- Dataset/
+|   `-- UWB-LOS-NLOS-Data-Set/         # original bundled dataset and license
+|-- data/
+|   `-- uwb_preprocessed_for_ml.csv    # processed dataset used by the notebooks
+|-- results/
+|   |-- classification/                # classifier plots and evaluation outputs
+|   |-- regression/                    # regression plots and analysis outputs
+|   |-- figures/eda/                   # EDA figures
+|   |-- feature_importance.csv         # feature ranking summary
+|   |-- model_comparison.csv           # model performance summary
+|   `-- summary.txt                    # consolidated experiment results
+|-- CSC3105_Mini_Project_2026.pdf      # project brief
+|-- pyproject.toml                     # dependency and tool configuration
+`-- uv.lock                            # locked dependency versions
+```
 
 ## Setup
 
